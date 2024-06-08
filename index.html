@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">@staz</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">@staz</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="togglenav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="togglenav()">About</a></li>
+        <li><a href="#experience" onclick="togglenav()">Experience</a></li>
+        <li><a href="#projects" onclick="togglenav()">Projects</a></li>
+        <li><a href="#contact" onclick="togglenav()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img class="ako2" src="./images/ako2.png" alt="albert" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title" id="title"> Albert Joy Sarenana</h1>
+      <p class="section__text__p2">BSIT student of UMTC</p>
+      <div class="btn-container">
+
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+        <img src="./images/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+
+    </div>
+  </section>
+  <hr class="boundd">
+  <section id="about">
+
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img class="ako3" src="./images/ako.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+
+        <div class="about-containers">
+
+          <div class="details-container">
+
+            <h3>Education</h3>
+            <p>BSIT 2nd in UMTC</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a second-year student in the Bachelor
+            of Science in Information Technology (BSIT)
+            program at the University of Mindanao Tagum
+            College (UMTC), my academic journey has been
+            both challenging and rewarding. Creating a portfolio
+            of my projects has been a crucial part of my
+            journey. It showcases my skills and accomplishments
+            and serves as a tangible proof of my abilities to
+            potential employers. Projects like developing a
+            web application for a local business and creating
+            a database management system for a school project
+            are highlights of my portfolio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <hr class="boundd">
+  <section id="experience">
+
+
+    <h2>Experiences</h2>
+
+    <div class="exallcard">
+
+
+      <div class="card1">
+        <img src="./images/check.png" alt="">
+        <img src="./images/html.png" alt="">
+
+        <p class="ht">Html</p>
+        <p>Basic</p>
+        <div class="level">
+          <p class="level1 lvl">50%</p>
+        </div>
+      </div>
+      <div class="card1">
+        <img src="./images/check.png" alt="">
+        <img class="css" src="./images/css.png" alt="">
+
+        <p class="ht">Css</p>
+        <p>Basic</p>
+        <div class="level">
+          <p class="level2 lvl">40%</p>
+        </div>
+
+      </div>
+      <div class="card1">
+        <img src="./images/check.png" alt="">
+        <img src="./images/js.png" alt="">
+
+        <p class="ht">Jscript</p>
+        <p>Basic</p>
+        <div class="level">
+          <p class="level3 lvl">30%</p>
+        </div>
+
+      </div>
+      <div class="card1">
+        <img src="./images/check.png" alt="">
+        <img src="./images/php.png" alt="">
+
+        <p class="ht">Php</p>
+        <p>Basic</p>
+        <div class="level">
+          <p class="level4 lvl">20%</p>
+        </div>
+      </div>
+      <div class="card1">
+        <img src="./images/check.png" alt="">
+        <img src="./images/mysql.png" alt="">
+
+        <p class="ht">Mysql</p>
+        <p>Basic</p>
+        <div class="level">
+          <p class="level5 lvl">30%</p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+  <section id="projects">
+
+    <p class="project">Projects</p>
+
+    <div class="box">
+
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left">❮</i>
+
+        <div class="carousel">
+
+          <img src="./images/1.png" alt="img" draggable="false">
+          <img src="./images/4.png" alt="img" draggable="false">
+          <img src="./images/3.png" alt="img" draggable="false">
+          <img src="./images/5.png" alt="img" draggable="false">
+          <img src="./images/2.png" alt="img" draggable="false">
+          <img src="./images/6.png" alt="img" draggable="false">
+
+        </div>
+
+        <i id="right" class="fa-solid fa-angle-right">❯</i>
+      </div>
+    </div>
+    <div class="visit">
+    <button class="btn btn-color-1 " id="visit" onclick="location.href='../Resort/index.html'">
+      Visit
+    </button>
+    <p class="text3">Local Resort Website</p>
+  </div>
+    <p class="text4">
+      This is the first local resort website that I have created for Hayahay
+      Beach Resort. My primary goal in developing this website was to learn
+      and practice the fundamentals of HTML and CSS. I aimed to build a visually
+      appealing and functional website that showcases the beauty and amenities
+      of Hayahay Beach Resort.
+      One of the key features I focused on was making the website responsive.
+      This means that the website adjusts and looks great on all devices, whether
+      you're viewing it on a desktop, tablet, or smartphone. Ensuring a seamless
+      user experience across various screen sizes was a critical aspect of the development process.</p>
+    <hr class="bound">
+    <div class="con">
+      <div class="conbox">
+        <img src="./images/ecom1.png" alt="">
+      </div>
+      <div class="conbox">
+        <img src="./images/ecom2.png" alt="">
+      </div>
+
+      <div class="conbox">
+        <img src="./images/ecom3.png" alt="">
+      </div>
+
+      <div class="conbox">
+        <img src="./images/ecom4.png" alt="">
+      </div>
+
+    </div>
+    <div class="visit">
+      <button class="btn btn-color-1 " id="visit" onclick="location.href='../business/index.html'">
+        Visit
+      </button>
+      <p class="text3">Ecommerce webite</p>
+    </div>
+    <p class="text4">
+      For our fast food e-commerce website serving Mati City, our team leveraged a collaborative approach,
+       harnessing the power of HTML, CSS, JavaScript, PHP, and MySQL to craft a seamless and efficient 
+       platform. The heart of our site lies in its functionalities—specifically, the ability for users 
+       to effortlessly add items to their cart and for administrators to seamlessly introduce new 
+       products into our database
+      To ensure a smooth user experience, we've implemented a responsive and visually appealing 
+      design using HTML and CSS. Our frontend development team meticulously crafted each page to 
+      be intuitive and engaging, enabling customers to navigate through our offerings with ease. 
+      JavaScript then steps in to provide dynamic functionality, allowing users to add products to
+       their cart without having to refresh the page, thus enhancing the overall shopping experience. 
+      On the backend, PHP takes the reins, orchestrating the communication between the frontend and our 
+      MySQL database. When a user adds a product to their cart, PHP processes the request, validating the inputs, and securely updating the user's cart in our database. Similarly, when an administrator adds a new product, PHP ensures the integrity of the data, handling form submissions and storing the product details in our MySQL database.</p>
+
+
+    <!-- dri taman -->
+
+  </section>
+  <section id="contact">
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:sarenana12345@gmail.com">sarenana@gmail.com</a></p>
+      </div>
+
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>&copy;<em>Albert joy Sareñana. All Rights Reserved.
+    </em> 
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
